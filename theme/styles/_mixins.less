@@ -1,0 +1,60 @@
+.basic-revealer {
+  &.animating,
+  &.visible {
+    display: block !important;
+  }
+
+  &.animating-in,
+  &.animating-out {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
+.font-primary {
+  font-family: 'Roboto Slab', serif;
+}
+
+.font-secondary {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.font-tertiary {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-treatment {
+  .font-tertiary;
+  font-size: 16px;
+  color: @headerColor;
+  text-transform: lowercase;
+}
+
+.link-hover(@size: 1px) {
+  border-bottom: @size solid @primaryColor;
+}
+
+.inner-header {
+  .font-tertiary;
+  color: @headerColor;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.inner-inner-header {
+  .font-tertiary;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header-6 {
+  .font-tertiary;
+  color: @headerColor;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

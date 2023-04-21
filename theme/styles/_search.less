@@ -1,0 +1,173 @@
+/* Search */
+#wsite-search-content {
+  padding-top: 30px;
+}
+
+#wsite-search-sidebar {
+  h3 {
+    .header-6;
+  }
+
+  a {
+    .font-tertiary;
+    color: @fontColor;
+    font-size: 18px;
+    font-weight: 400;
+
+    &:hover {
+      .link-hover;
+    }
+  }
+}
+
+#wsite-search-query {
+  padding: 20px;
+  border-radius: 0 !important;
+  box-shadow: none;
+}
+
+#wsite-search-submit {
+  margin-top: 20px;
+}
+
+#wsite-search-list {
+  li:not(#wsite-search-product-result-section) {
+    a h3 {
+      .font-tertiary;
+      padding-bottom: 15px;
+      color: @headerColor;
+      text-decoration: none;
+
+      &:hover {
+        color: @primaryColor;
+      }
+    }
+  }
+}
+
+.wsite-search-product-result {
+  text-align: center !important;
+
+  .wsite-search-product-image-container {
+    border: none;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .wsite-search-product-name {
+    color: @headerColor;
+  }
+
+  .wsite-search-product-price {
+    color: @inputColor;
+  }
+
+  &:hover {
+    .wsite-search-product-image-container {
+      opacity: 0.7;
+    }
+  }
+}
+
+#wsite-search-pagenav {
+  text-align: center;
+
+  a {
+    .font-primary;
+    height: 25px;
+    color: @headerColor;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+
+    &.active,
+    &:hover {
+      background-color: @primaryColor;
+    }
+  }
+}
+
+#wsite-search-product-results {
+  .flex-display(flex);
+  .flex-wrap(wrap);
+  .justify-content(space-between);
+
+  .wsite-search-product-result {
+    .flex-basis(32%);
+    padding-right: 0 !important;
+    margin-bottom: 30px;
+  }
+}
+
+//Mostly Legacy Code
+@media screen and (max-width: 768px) {
+  #wsite-search-sidebar {
+    .transition(all 500ms ease-in-out);
+    position: relative;
+    z-index: 4;
+    overflow-y: hidden;
+    width: 100%;
+    max-height: 35px;
+    padding: 0;
+  }
+
+  #wsite-search-sidebar:before {
+    display: block;
+    width: 100%;
+    padding: 10px 18px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    content: 'VIEW SEARCH FILTERS\00a0\00a0\25be';
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  #wsite-search-sidebar.sidebar-expanded {
+    max-height: 1000px;
+    cursor: default !important;
+  }
+
+  #wsite-search-sidebar.sidebar-expanded:before {
+    content: 'CLOSE\00a0\00a0\25b4';
+  }
+
+  #wsite-search-header h2 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+  }
+
+  #wsite-search-form-container {
+    float: none;
+    width: 100%;
+  }
+
+  #wsite-search-query {
+    padding: 2px 10px;
+  }
+
+  #wsite-search-sidebar .wsite-search-facet-price input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 6px!important;
+  }
+
+  #wsite-search-results {
+    width: 100%;
+  }
+
+  #wsite-search-product-results .wsite-search-product-result {
+    .flex-basis(100%);
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #wsite-search-submit {
+    margin-top: 0;
+  }
+}

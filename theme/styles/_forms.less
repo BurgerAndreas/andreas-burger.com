@@ -1,0 +1,76 @@
+input {
+  color: @inputColor;
+}
+
+.wsite-form-label {
+  .font-tertiary;
+  display: block;
+  margin-bottom: 5px;
+  color: @headerColor;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wsite-form-input,
+#commentInputs .field input,
+#commentInputs .field textarea {
+  .font-primary;
+  padding: 10px !important;
+  color: @inputColor !important;
+  font-size: 16px !important;
+  box-shadow: none !important;
+  box-sizing: border-box;
+  border: 1px solid @borderColor;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken(@inputColor, 50%) !important;
+    border-color: darken(@borderColor, 20%);
+  }
+}
+
+#commentInputs .field .commentTextarea textarea {
+  height: auto !important;
+}
+
+// Select Boxes (simple css-only)
+.form-select,
+.simple-select-wrapper select {
+  position: relative;
+  display: block;
+  background: transparent;
+  background-image: none;
+  overflow: hidden;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  height: 43px !important;
+  color: @headerColor;
+  background-color: @backgroundColor;
+  border-radius: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+  appearance: none;
+  border: 1px solid @borderColor;
+  &:focus {
+    border-color: darken(@borderColor, 30%);
+  }
+}
+
+.simple-select-wrapper {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 7px;
+    height: 7px;
+    margin-top: -5px;
+    border-top: 1px solid @fontColor;
+    border-right: 1px solid @fontColor;
+    content: "";
+    transform: rotate(135deg);
+  }
+}
