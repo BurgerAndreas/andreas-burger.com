@@ -1,0 +1,248 @@
+/* Global Styles */
+// html {
+//   height: 100%;
+
+//   &.nav-open {
+//     overflow: hidden;
+//   }
+// }
+
+body {
+  .font-primary;
+  width: 100%;
+  height: 100%;
+  background: @backgroundColor;
+  color: @fontColor;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.wsite-theme-dark {
+    color: @headerColor;
+  }
+
+  &.nav-open {
+    overflow: hidden;
+  }
+}
+
+a {
+  color: @primaryColor;
+  text-decoration: none;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+a:hover {
+  color: @headerColor;
+}
+
+a img {
+  border: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  .font-tertiary;
+  padding-bottom: 15px;
+  color: @headerColor;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+p {
+  .font-primary;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+blockquote {
+  margin: 2em 0;
+  padding: 1em;
+  padding-left: 30px !important;
+  background: url(images/quotes.png) no-repeat 0px 25px;
+  color: #666666;
+  border-left: 0px !important;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  color: #666666;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-shadow: none;
+  box-sizing: border-box;
+  background-image: none !important;
+}
+
+textarea {
+  resize: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+.wsite-form-field,
+.wsite-com-product-option-groups {
+  input[type="radio"],
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #b2b2ad !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-shadow: none;
+  }
+  input[type="radio"] {
+    border-radius: 8px;
+  }
+  input[type="checkbox"] {
+    background-color: #ffffff;
+    border-radius: 0;
+  }
+  input[type="radio"]:after {
+    display: block;
+    border-radius: 8px;
+    box-sizing: border-box;
+    content: " ";
+  }
+  input[type="radio"]:checked,
+  input[type="checkbox"]:checked {
+    border: 1px solid @primaryColor !important;
+  }
+  input[type="radio"]:checked:after {
+    background: @primaryColor;
+    border: 2px solid @borderColor;
+    width: 14px;
+    height: 14px;
+  }
+  input[type="checkbox"]:after {
+    .transform(rotate(45deg));
+    position: relative;
+    top: 1px;
+    left: 4px;
+    width: 3px;
+    height: 6px;
+    border: solid @borderColor;
+    border-width: 0 2px 2px 0;
+  }
+
+  input[type="checkbox"]:checked:after {
+    display: block;
+    border-color: @primaryColor;
+    content: " ";
+  }
+}
+
+.site-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background-color: @headerColor;
+  opacity: 0.8;
+
+  .show-overlay & {
+    display: block;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 40px 60px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  .flex-display(flex);
+  .flex-direction(column);
+  height: 100%;
+  min-height: 100vh;
+}
+
+hr.styled-hr {
+  color: darken(@backgroundColor, 75%);
+  background-color: darken(@backgroundColor, 75%);
+  box-sizing: content-box;
+}
+
+/* Content */
+.main-wrap {
+  .flex-shrink(0);
+  .flex-grow(1);
+  width: 100%;
+  background-color: @backgroundColor;
+}
+
+/* Social */
+.wsite-social .wsite-social-item {
+  margin-right: 5px;
+
+  &:before {
+    display: inline-block;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    color: @headerColor;
+    background-color: @primaryColor !important;
+    border-radius: 100%;
+    line-height: 30px;
+    text-align: center;
+
+    body.wsite-theme-dark & {
+      color: @backgroundColor;
+    }
+  }
+
+  &:hover {
+    &:before {
+      color: @primaryColor;
+      background-color: @backgroundColor;
+
+      body.wsite-theme-dark & {
+        background-color: @backgroundColor;
+      }
+    }
+  }
+}
