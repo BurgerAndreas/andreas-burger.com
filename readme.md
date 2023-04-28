@@ -1,6 +1,9 @@
 # andreas-burger.com
 
-## Versions
+The personal website of Andreas Burger. 
+Created to 50% by LLMs.
+
+## Archived Versions
 
 ### Wordpress
 
