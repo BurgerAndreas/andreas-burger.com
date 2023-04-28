@@ -1,3 +1,15 @@
+/* CSS custom properties (variables) */
+/* Usage: color: var(--main-color); */
+:root {
+    /* #fff #ffffff #f5f5f5 #4c4c4c #000 */
+    --color-black: #000;
+    --color-shadow: #0000001a;
+    /* For hovers */
+    --color-secondary: #4c4c4c;
+    /* Background */
+    --color-background: #fff; 
+}
+
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
@@ -6,8 +18,8 @@ body {
 }
 
 header {
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-background);
+    box-shadow: 0 4px 6px var(--color-shadow);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -38,13 +50,13 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: #000;
+    color: var(--color-black);
     font-weight: bold;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: #4c4c4c;
+    color: var(--color-secondary);
 }
 
 .social-media {
@@ -61,7 +73,7 @@ nav ul li a:hover {
 }
 
 .social-media ul li a {
-    color: #000;
+    color: var(--color-black);
     font-weight: bold;
     text-decoration: none;
 }
@@ -134,13 +146,13 @@ nav ul li a:hover {
 }
 
 .social-media-2 ul li a {
-    color: #000;
+    color: var(--color-black);
     font-weight: bold;
     text-decoration: none;
 }
 
 .social-media-2 ul li a:hover {
-    color: #4c4c4c;
+    color: var(--color-secondary);
 }
 
 .social-media-2 li a {
@@ -151,8 +163,8 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-black);
+    color: var(--color-background);
     /* margin-top: 50px;
     padding: 20px; */
 }
@@ -167,7 +179,7 @@ footer img {
 }
 
 footer .social-media-2 ul li a {
-    color: #fff;
+    color: var(--color-background);
     font-weight: bold;
     text-decoration: none;
 }
@@ -185,8 +197,7 @@ footer .social-media-2 ul li a {
     justify-content: space-between;
     margin: 20px;
     padding: 20px;
-    background-color: #f5f5f5;
-    background-color: #fff;
+    background-color: var(--color-background);
 }
 
 .photo-grid {
@@ -209,7 +220,7 @@ footer .social-media-2 ul li a {
     flex-basis: 45%;
     margin-left: auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: var(--color-background);
 }
 
 h2 {
@@ -229,15 +240,14 @@ p {
     justify-content: space-between;
     margin: 20px;
     padding: 20px;
-    background-color: #f5f5f5;
-    background-color: #fff;
+    background-color: var(--color-background);
 }
 
 .project {
     flex-basis: 30%;
     margin-bottom: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-background);
+    box-shadow: 0 0 10px var(--color-shadow);
     padding: 20px;
     text-align: center;
 }
@@ -258,3 +268,94 @@ p {
     line-height: 1.5;
 }
   
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 50px 0;
+  }
+  
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1px;
+    background-color: var(--color-secondary);
+}
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .timeline-item.education .timeline-content {
+    margin-right: 50px;
+  }
+  
+  .timeline-item.work .timeline-content {
+    margin-left: 50px;
+  }
+  
+  .timeline-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-background);
+    border: 2px solid var(--color-secondary);
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.4rem;
+  }
+  
+  .timeline-item.education .timeline-icon {
+    left: 50%;
+    right: auto;
+  }
+  
+  .timeline-item.work .timeline-icon {
+    left: 50%;
+    right: auto;
+  }
+  
+  .timeline-content {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+    padding: 20px;
+    background-color: var(--color-background);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px var(--color-shadow);
+    text-align: left;
+  }
+
+  .timeline-item.education .timeline-content {
+    /* width content = 20 + 500 + 20 = 540 (padding) */
+    /* width icon = 50 */
+    transform: translate(-590px, -50%);
+  }
+  
+  .timeline-item.work .timeline-content {
+    /* left: 50%;
+    right: auto; */
+    transform: translate(0px, -50%);
+  }
+  
+  .timeline-content h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  
+  .timeline-content p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+  }
