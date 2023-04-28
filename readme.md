@@ -7,12 +7,8 @@ Created to 50% by LLMs.
 
 ### Wordpress
 
-Automatically created from weebly site. Never used.
+Created from weebly site using third party website. Never used.
 
 ### Weebly
 
-Export from weebly. Broken.
-
-### Jekyl
-
-TBD.
+Export direclty from weebly. Broken.
