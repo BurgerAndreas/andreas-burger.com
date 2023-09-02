@@ -249,6 +249,15 @@ p {
     background-color: var(--color-background);
     box-shadow: 0 0 10px var(--color-shadow);
     padding: 20px;
+    /* text-align: center; */
+    text-align: left;
+}
+
+.project h2 {
+    text-align: center;
+}
+
+.project h3 {
     text-align: center;
 }
 

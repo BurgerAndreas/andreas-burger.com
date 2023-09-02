@@ -22,9 +22,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#me">Home</a></li>
+                <li><a href="#me">Top</a></li>
                 <li><a href="#cv">CV</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#favorites">Favorites</a></li>
             </ul>
             <ul class="social-media">
                 <li><a href="https://twitter.com/atAndreasBurger"><i class="fab fa-twitter"></i></a></li>
@@ -50,7 +50,8 @@
         </div> -->
 
         <!-- Images next to content -->
-        <section id="me" class="image-beside-text">
+        <a id="me"></a>
+        <section class="image-beside-text">
             <div class="photo-grid">
               <img src="/images/andreas/whynot.jpg" alt="Photo 1">
               <img src="/images/andreas/yazd_square.jpg" alt="Photo 2">
@@ -58,18 +59,27 @@
               <img src="/images/andreas/pf_zeb_inspirational_small.JPG" alt="Photo 4">
             </div>
             <div class="text">
-                <h2>Andreas Burger</h2>
+                <h1>Andreas Burger</h1>
                 <p>
-                    Studied physics with lots of programming. <br>
+                    <!-- Studied physics with lots of programming. <br>
                     Master thesis on Quantum Computing. <br>
-                    Passionate for Machine Learning. <br>
+                    Passionate for Machine Learning. <br> -->
+                    PhD at University of Toronto under 
+                    <a href="https://nandita-research-website-tan.vercel.app/">Nandita Vijaykumar</a>. <br>
+                    Curios about how robots can percieve their environment efficiently. <br>
                     <br>
-                    Lived in Vienna, Munich, Iran, and Singapore. <br>
+                    Previously explored quantum computing. <br>
+                    Reasearched at <a href="https://www.meetiqm.com/">IQM Quantum Computers</a>, <br>
+                    studied in 
+                    <a href="https://www.tuwien.at/en">Vienna</a>, 
+                    <a href="https://www.lmu.de/en/">Munich</a>,
+                    and 
+                    <a href="https://www.quantumlah.org/">Singapore</a>. <br>
                     <br>
                     Interested in sports, neuroscience, and building cool stuff.
                 </p>
                 <p> <br> </p>
-                <b>Look around and reach out! :)</b>
+                <!-- <b>Look around and reach out! :)</b> -->
             </div>
         </section>
 
@@ -79,9 +89,24 @@
 
         <!-- timeline -->
         <!-- example HTML code for a CV section with a timeline containing five education steps and seven work steps: -->
-        <h2 style="text-align: center; padding-bottom: 30px;">Life so far</h2>
-        <section id="cv" class="cv">
+        <a id="cv"></a>
+        <h2 style="text-align: center; padding-bottom: 30px;">Timeline</h2>
+        <br>
+        <section class="cv">
             <div class="timeline">
+                <div class="timeline-item education">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>PhD, Computer Science</h3>
+                        <p>University of Toronto</p>
+                        <a href="https://nandita-research-website-tan.vercel.app/">
+                        Prof. Nandita Vijaykumar
+                        </a>
+                        <p class="date">2023 - 2027</p>
+                    </div>
+                </div>
                 <div class="timeline-item work">
                     <div class="timeline-icon">
                         <i class="fas fa-briefcase"></i>
@@ -225,7 +250,8 @@
 
         <!-- Projects -->
         <!-- <h2 style="text-align: center;">Projects</h2>
-        <section id="projects" class="projects">
+        <a id="projects"></a>
+        <section class="projects">
             <div class="project">
               <img src="project1.jpg" alt="Project 1">
               <h3>Project Title 1</h3>
@@ -246,18 +272,66 @@
                 <img src="project1.jpg" alt="Project 1">
                 <h3>Project Title 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod risus quis risus consectetur, in elementum lacus molestie.</p>
-              </div>
-              <div class="project">
+            </div>
+            <div class="project">
                 <img src="project2.jpg" alt="Project 2">
                 <h3>Project Title 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod risus quis risus consectetur, in elementum lacus molestie.</p>
-              </div>
-              <div class="project">
+            </div>
+            <div class="project">
                 <img src="project3.jpg" alt="Project 3">
                 <h3>Project Title 3</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod risus quis risus consectetur, in elementum lacus molestie.</p>
             </div>
         </section> -->
+
+        <!-- Personal Favorites -->
+        <a id="favorites"></a>
+        <h2 style="text-align: center;">Personal Favorites</h2>
+        <section class="projects">
+            <div class="project">
+              <!-- <img src="project1.jpg" alt="Project 1"> -->
+              <h3>Podcasts</h3>
+              <p>
+                <li>Huberman Lab</li>
+                <li>Hidden Brain</li>
+                <li>The Ezra Klein Show</li>
+              </p>
+            </div>
+            <div class="project">
+                <!-- <img src="project1.jpg" alt="Project 1"> -->
+                <h3>Movies</h3>
+                <p>
+                  <li>Blade Runner (1982)</li>
+                  <li>Parasite (2019)</li>
+                  <li>Spider-Man: Across the Spider-Verse (2023)</li>
+                </p>
+            </div>
+            <div class="project">
+                <!-- <img src="project1.jpg" alt="Project 1"> -->
+                <h3>Gifts I wish I would get</h3>
+                <p>
+                  <li>Vastar Full Set 60W 110V Soldering Iron Kit</li>
+                    <li>Plants</li>
+                </p>
+            </div>
+
+            <!-- <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod risus quis risus consectetur, in elementum lacus molestie.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod risus quis risus consectetur, in elementum lacus molestie.</p>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Title 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod risus quis risus consectetur, in elementum lacus molestie.</p>
+            </div> -->
+        </section>
 
         <!-- <div class="social-media-2">
             <ul>
