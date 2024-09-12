@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: var(--color-background);
-    box-shadow: 0 4px 6px var(--color-shadow);
+    /* box-shadow: 0 4px 6px var(--color-shadow); */
     position: sticky;
     top: 0;
     z-index: 100;
@@ -247,7 +247,7 @@ p {
     flex-basis: 30%;
     margin-bottom: 20px;
     background-color: var(--color-background);
-    box-shadow: 0 0 10px var(--color-shadow);
+    /* box-shadow: 0 0 10px var(--color-shadow); */
     padding: 20px;
     /* text-align: center; */
     text-align: left;
@@ -266,6 +266,51 @@ p {
     height: auto;
     margin-bottom: 10px;
 }
+
+
+/* Papers */
+.papers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the container */
+    margin: 20px auto; /* Center the entire papers container */
+    padding: 20px;
+    background-color: var(--color-background);
+    width: 100%; /* Adjust this to control overall width */
+}
+
+.paper {
+    display: flex; /* Make flex to align image and text */
+    flex-direction: row; /* Ensure image is to the left and text to the right */
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    background-color: var(--color-background);
+    /* box-shadow: 0 0 10px var(--color-shadow); */
+    padding: 20px;
+    align-items: center; /* Vertically align image and text */
+    /* max-width: 100%; */
+}
+
+/* image */
+.paper img {
+    height: 200px; /* Fixed height */
+    width: auto; 
+    max-width: 100%; /* Prevents image from overflowing its container */
+    margin-right: 20px; /* Add some space between image and text */
+}
+
+.paper-content {
+    display: flex;
+    /*  mininum width */
+    min-width: 200px;
+    max-width: 100%;
+    flex-direction: column; /* Stack h3 and p vertically */
+}
+
+.paper h2, .paper h3 {
+    text-align: left;
+}
+
 
 h3 {
     font-size: 20px;
@@ -342,7 +387,7 @@ p {
     padding: 20px;
     background-color: var(--color-background);
     border-radius: 4px;
-    box-shadow: 0 4px 8px var(--color-shadow);
+    /* box-shadow: 0 4px 8px var(--color-shadow); */
     text-align: left;
   }
 
