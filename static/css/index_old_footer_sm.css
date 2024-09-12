@@ -1,0 +1,190 @@
+/* CSS custom properties (variables) */
+/* Usage: color: var(--main-color); */
+:root {
+    /* #fff #ffffff #f5f5f5 #4c4c4c #000 */
+    --color-black: #000;
+    --color-shadow: #0000001a;
+    /* For hovers */
+    --color-secondary: #4c4c4c;
+    /* Background */
+    --color-background: #fff; 
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-background);
+    /* box-shadow: 0 4px 6px var(--color-shadow); */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: var(--color-black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--color-secondary);
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media li {
+    margin-right: 10px;
+}
+
+.social-media ul {
+    list-style: none;
+}
+
+.social-media ul li a {
+    color: var(--color-black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.social-media li:last-child {
+    margin-right: 0;
+}
+
+.social-media li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Social Media outside nav */
+.social-media-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media-2 ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media-2 ul li {
+    margin-right: 20px;
+}
+
+.social-media-2 ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media-2 ul li a {
+    color: var(--color-black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.social-media-2 ul li a:hover {
+    color: var(--color-secondary);
+}
+
+.social-media-2 li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-black);
+    color: var(--color-background);
+    /* margin-top: 50px;
+    padding: 20px; */
+}
+
+footer img {
+    width: 100%;
+    /* max-width: 1200px; */
+    height: 50%;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+footer .social-media-2 ul li a {
+    color: var(--color-background);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.padding-section {
+    height: 50px;
+}
+
