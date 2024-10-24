@@ -50,8 +50,7 @@
                     </h1>
                     <div class="content has-text-justified">
                         <p>
-                            I am a Computer Science PhD student at the University of Toronto, studying under the
-                            supervision of
+                            I am a Computer Science PhD student at the University of Toronto, supervised by
                             <a href="https://www.matter.toronto.edu/basic-content-page/about-alan" target="_blank">Prof.
                                 Alán Aspuru-Guzik</a>
                             and
@@ -129,6 +128,75 @@
 
             <h2 class="title is-3">Publications</h2>
 
+            <!-- Start DEQFF -->
+            <div class="publication-block columns is-vcentered">
+                <div class="column is-3">
+                    <p class="image ">
+                        <!-- <video poster="" id="dsire" autoplay controls muted loop height="100%">
+                            <source src="images/spin-boson-2_orig.jpeg" type="video/mp4">
+                        </video> -->
+                        <!-- <img src="images/projects/spinboson/spin-boson-2_orig.jpeg" alt="Spin Boson Model"> -->
+                        <img src="images/projects/deqff/EquiDequiformer_horizontal.png" alt="DEQ architecture">
+                    </p>
+                </div>
+                <div class="column is-9">
+                    <!-- Spin-Boson -->
+                    <div class="content">
+                        <h3 class="publication-title">
+                            <a href="https://openreview.net/forum?id=rynb4Vn8rb" target="_blank">
+                                DEQuify your force field: Towards efficient simulations using deep equilibrium models
+                            </a>
+                        </h3>
+                        <div class="publication-venue">ICLR 2025 (under review)</div>
+                        <div class="publication-authors">
+                            <span class="author-block">
+                                <strong>Andreas Burger</strong>,
+                            </span>
+                            <span class="author-block">
+                                Luca Thiede,
+                            </span>
+                            <span class="author-block">
+                                Alán Aspuru-Guzik,
+                            </span>
+                            <span class="author-block">
+                                Nandita Vijaykumar,
+                            </span>
+                        </div>
+                        <p class="publication-description">
+                            We speed up molcular dynamics simulations by focusing the temporal structure of the problem.
+                            We reuse intermediate latents from the previous prediction step, by turning a state of the art architecture into a deep equilibrium model.
+                            Our method is faster, more accurate, and uses fewer parameters than the original model.
+                            <!-- Digital quantum computers have the potential to simulate complex quantum systems. The spin-boson model is one of such systems, used in disparate physical domains. Importantly, in a number of setups, the spin-boson model is open, i.e., the system is in contact with an external environment which can, for instance, cause the decay of the spin state. Here, we study how to simulate such open quantum dynamics in a digital quantum computer, for which we use an IBM hardware. We consider in particular how accurate different implementations of the evolution result as a function of the level of noise in the hardware and of the parameters of the open dynamics. For the regimes studied, we show that the key aspect is to simulate the unitary portion of the dynamics, while the dissipative part can lead to a more noise-resistant simulation. We consider both a single spin coupled to a harmonic oscillator, and also two spins coupled to the oscillator. In the latter case, we show that it is possible to simulate the emergence of correlations between the spins via the oscillator. -->
+                        </p>
+                        <!-- Publication Links. -->
+                        <div class="publication-links buttons">
+                            <!-- <a class="external-link button is-small is-rounded" href="https://vision.huji.ac.il/dsire/"
+                                target="_blank">
+                                <span class="icon"><i class="fas fa-globe-europe"></i></span>
+                                <span>Project Page</span>
+                            </a> -->
+                            <a class="external-link button is-small is-rounded"
+                                href="https://openreview.net/forum?id=rynb4Vn8rb" target="_blank">
+                                <span class=" icon"><i class="fas fa-file-pdf"></i></span>
+                                <span>arXiv</span>
+                            </a>
+                            <!-- Link to code -->
+                            <!-- <a class="external-link button is-small is-rounded"
+                                href="https://github.com/BurgerAndreas/q-spin-boson" target="_blank">
+                                <span class="icon"><i class="fas fab fa-github"></i></span>
+                                <span>Code</span>
+                            </a> -->
+                            <!-- <a class="external-link button is-small is-rounded"
+                                href="https://huggingface.co/datasets/MoSalama98/LoRA-WiSE" target="_blank">
+                                <span class="icon" style="vertical-align: middle; font-size: 20px;">&#129303;</span>
+                                <span style="vertical-align: middle;">Dataset</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End DEQFF -->
+
             <!-- Start SpinBoson -->
             <div class="publication-block columns is-vcentered">
                 <div class="column is-3">
@@ -141,6 +209,7 @@
                     </p>
                 </div>
                 <div class="column is-9">
+                    <!-- Spin-Boson -->
                     <div class="content">
                         <h3 class="publication-title">
                             <a href="https://doi.org/10.3390/e24121766" target="_blank">
@@ -191,7 +260,7 @@
                     </div>
                 </div>
             </div>
-            <!-- End DSiRe -->
+            <!-- End SpinBoson -->
 
             <!-- https://github.com/BurgerAndreas/adanalyze -->
 
@@ -208,160 +277,180 @@
     </div>
 
     <!-- timeline -->
-    <a id="cv"></a>
+    <a id="CV"></a>
     <!-- <h2 style="text-align: center; padding-bottom: 30px;">Timeline</h2> -->
     <section class="section">
-        <h2 class="title is-3">CV</h2>
-        <div class="timeline">
-            <div class="timeline-item education">
-                <div class="timeline-icon">
-                    <i class="fas fa-graduation-cap"></i>
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item education">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>PhD, Computer Science</h3>
+                        <p>University of Toronto</p>
+                        <a href="https://www.matter.toronto.edu/basic-content-page/about-alan">Prof. Alán Aspuru-Guzik</a>
+                        <br>
+                        <a href="https://nandita-research-website-tan.vercel.app/">
+                            Prof. Nandita Vijaykumar
+                        </a>
+                        <p class="date">2023 - 2027</p>
+                    </div>
                 </div>
-                <div class="timeline-content">
-                    <h3>PhD, Computer Science</h3>
-                    <p>University of Toronto</p>
-                    <a href="https://www.matter.toronto.edu/basic-content-page/about-alan">Prof. Alán Aspuru-Guzik</a>
-                    <br>
-                    <a href="https://nandita-research-website-tan.vercel.app/">
-                        Prof. Nandita Vijaykumar
-                    </a>
-                    <p class="date">2023 - 2027</p>
-                </div>
-            </div>
-            <div class="timeline-item work">
-                <div class="timeline-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>Quantum Algorithm Engineer</h3>
-                    <p>IQM Quantum Computers</p>
-                    <p class="date">2023.05 - 2023.08</p>
-                    <!-- <ul>
-                            <li>Develop and maintain web applications</li>
-                            <li>Collaborate with cross-functional teams</li>
-                            <li>Participate in code reviews and testing</li>
-                        </ul> -->
-                </div>
-            </div>
-            <div class="timeline-item work">
-                <div class="timeline-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>Product Owner</h3>
-                    <p>applied by zeb</p>
-                    <p class="date">2023.02 - 2023.04</p>
-                    <!-- <ul>
-                            <li>Develop and maintain web applications</li>
-                            <li>Collaborate with cross-functional teams</li>
-                            <li>Participate in code reviews and testing</li>
-                        </ul> -->
-                </div>
-            </div>
-            <div class="timeline-item education">
-                <div class="timeline-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>Master's thesis</h3>
-                    <p>National University of Singapore</p>
-                    <a href="https://doi.org/10.3390/e24121766">
-                        Digital Quantum Simulation of the Spin-Boson Model under Markovian Open-System Dynamics
-                    </a>
-                    <p class="date">2022 - 2022</p>
-                </div>
-            </div>
-            <div class="timeline-item work">
-                <div class="timeline-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>Consultant</h3>
-                    <p>EFS Consulting</p>
-                    <p class="date">2021.10 - 2021.12</p>
-                    <!-- <ul>
-                            <li>Developed and maintained websites for clients</li>
-                            <li>Collaborated with designers to implement designs</li>
-                            <li>Managed project timelines and budgets</li>
-                        </ul> -->
-                </div>
-            </div>
-            <div class="timeline-item work">
-                <div class="timeline-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>Research Intern</h3>
-                    <p>Iran University of Science and Technology</p>
-                    <p class="date">2021.08 - 2021.09</p>
-                    <!-- <ul>
-                            <li>Developed and maintained websites for clients</li>
-                            <li>Collaborated with designers to implement designs</li>
-                            <li>Managed project timelines and budgets</li>
-                        </ul> -->
-                </div>
-            </div>
-            <div class="timeline-item education">
-                <div class="timeline-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>Master's Degree in Physics</h3>
-                    <p>University of Munich (LMU)</p>
-                    <p class="date">2020 - 2022</p>
-                </div>
-            </div>
-            <div class="timeline-item education">
-                <div class="timeline-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>Bachelor's Degree in Physics</h3>
-                    <p>Vienna University of Technology</p>
-                    <p class="date">2017 - 2020</p>
-                </div>
-            </div>
-            <div class="timeline-item work">
-                <div class="timeline-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>Civil Service</h3>
-                    <p>Red Cross</p>
-                    <p class="date">2017.01 - 2017.09</p>
-                    <!-- <ul>
-                            <li>Developed and maintained websites for clients</li>
-                            <li>Collaborated with designers to implement designs</li>
-                            <li>Managed project timelines and budgets</li>
-                        </ul> -->
-                </div>
-            </div>
-            <div class="timeline-item education">
-                <div class="timeline-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>High School</h3>
-                    <p>Sir-Karl Popper Schule</p>
-                    <p class="date">2012 - 2016</p>
-                </div>
-            </div>
-            <div class="timeline-item work">
-                <div class="timeline-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>Construction Worker</h3>
-                    <p>Fruit Security</p>
-                    <p class="date">2014.07 - 2014.07</p>
-                    <!-- <ul>
-                            <li>Developed and maintained websites for clients</li>
-                            <li>Collaborated with designers to implement designs</li>
-                            <li>Managed project timelines and budgets</li>
-                        </ul> -->
-                </div>
-            </div>
 
+                <div class="timeline-item education">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Master's thesis</h3>
+                        <p>National University of Singapore</p>
+                        <a href="https://doi.org/10.3390/e24121766">
+                            Digital Quantum Simulation of the Spin-Boson Model under Markovian Open-System Dynamics
+                        </a>
+                        <p class="date">2022 - 2022</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item education">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Master's Degree in Physics</h3>
+                        <p>University of Munich (LMU)</p>
+                        <p class="date">2020 - 2022</p>
+                    </div>
+                </div>
+                <div class="timeline-item education">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Bachelor's Degree in Physics</h3>
+                        <p>Vienna University of Technology</p>
+                        <p class="date">2017 - 2020</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item education">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>High School</h3>
+                        <p>Sir-Karl Popper Schule</p>
+                        <p class="date">2012 - 2016</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- timeline -->
+    <a id="Experience"></a>
+    <!-- <h2 style="text-align: center; padding-bottom: 30px;">Timeline</h2> -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">Experience</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item work">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Quantum Algorithm Engineer</h3>
+                        <p>IQM Quantum Computers</p>
+                        <p class="date">2023/05 - 2023/08</p>
+                        <!-- <ul>
+                                <li>Develop and maintain web applications</li>
+                                <li>Collaborate with cross-functional teams</li>
+                                <li>Participate in code reviews and testing</li>
+                            </ul> -->
+                    </div>
+                </div>
+                <div class="timeline-item work">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Product Owner</h3>
+                        <p>applied by zeb</p>
+                        <p class="date">2023/02 - 2023/04</p>
+                        <!-- <ul>
+                                <li>Develop and maintain web applications</li>
+                                <li>Collaborate with cross-functional teams</li>
+                                <li>Participate in code reviews and testing</li>
+                            </ul> -->
+                    </div>
+                </div>
+                
+                <div class="timeline-item work">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Consultant</h3>
+                        <p>EFS Consulting</p>
+                        <p class="date">2021/10 - 2021/12</p>
+                        <!-- <ul>
+                                <li>Developed and maintained websites for clients</li>
+                                <li>Collaborated with designers to implement designs</li>
+                                <li>Managed project timelines and budgets</li>
+                            </ul> -->
+                    </div>
+                </div>
+                <div class="timeline-item work">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Research Intern</h3>
+                        <p>Iran University of Science and Technology</p>
+                        <p class="date">2021/08 - 2021/09</p>
+                        <!-- <ul>
+                                <li>Developed and maintained websites for clients</li>
+                                <li>Collaborated with designers to implement designs</li>
+                                <li>Managed project timelines and budgets</li>
+                            </ul> -->
+                    </div>
+                </div>
+                
+                <div class="timeline-item work">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Civil Service</h3>
+                        <p>Red Cross</p>
+                        <p class="date">2017/01 - 2017/09</p>
+                        <!-- <ul>
+                                <li>Developed and maintained websites for clients</li>
+                                <li>Collaborated with designers to implement designs</li>
+                                <li>Managed project timelines and budgets</li>
+                            </ul> -->
+                    </div>
+                </div>
+
+                <div class="timeline-item work">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Construction Worker</h3>
+                        <p>Fruit Security</p>
+                        <p class="date">2014/07 - 2014/07</p>
+                        <!-- <ul>
+                                <li>Developed and maintained websites for clients</li>
+                                <li>Collaborated with designers to implement designs</li>
+                                <li>Managed project timelines and budgets</li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
