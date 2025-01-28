@@ -1,8 +1,6 @@
-# andreas-burger.com
+# Andreas Burger's personal website
 
-Inspired by
-https://pages.cs.huji.ac.il/eliahu-horwitz/
+Personal website of Andreas Burger, at [www.andreas-burger.com](https://www.andreas-burger.com)
 
-Todo:
-- [ ] Add photographs
-- [ ] Add personal section
+Design based on [Eliah Horwitz's personal webpage](https://pages.cs.huji.ac.il/eliahu-horwitz/)
+
