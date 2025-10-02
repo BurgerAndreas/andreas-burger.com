@@ -181,6 +181,76 @@
 
             <h2 class="title is-3">Publications</h2>
 
+            <!-- Start HIP -->
+            <div class="publication-block columns is-vcentered">
+                <div class="column is-3">
+                    <p class="image ">
+                        <img src="images/projects/hip/hip_mainfig.png" alt="HIP architecture">
+                    </p>
+                </div>
+                <div class="column is-9">
+                    <div class="content">
+                        <h3 class="publication-title">
+                            <a href="https://arxiv.org/abs/2509.21624" target="_blank">
+                                Shoot from the HIP: Hessian Interatomic Potentials without derivatives
+                            </a>
+                        </h3>
+                        <!-- <div class="publication-venue"> <a href="https://moleculediscovery.github.io/workshop2024/" target="_blank">Ellis ML4Molecules best paper award</a> </div> -->
+                        <div class="publication-venue">Preprint </div>
+                        <div class="publication-authors">
+                            <span class="author-block">
+                                <strong>Andreas Burger</strong>,
+                            </span>
+                            <span class="author-block">
+                                Luca Thiede,
+                            </span>
+                            <span class="author-block">
+                                Nikolaj Rønne,
+                            </span>
+                            <span class="author-block">
+                                Nandita Vijaykumar,
+                            </span>
+                            <span class="author-block">
+                                Tejs Vegge,
+                            </span>
+                            <span class="author-block">
+                                Arghya Bhowmik,
+                            </span>
+                            <span class="author-block">
+                                Alán Aspuru-Guzik,
+                            </span>
+                        </div>
+                        <p class="publication-description">
+                            Hessians are computationally expensive to calculate and scale poorly with system size, with both quantum mechanical methods and neural networks. 
+                            In this work, we demonstrate that Hessians can be predicted directly from a deep learning model, without relying on automatic differentiation or finite differences. 
+                            We observe that one can construct SE(3)-equivariant, symmetric Hessians from irreducible representations (irrep) features up to degree l=2 computed during message passing in graph neural networks. 
+                            This makes HIP Hessians one to two orders of magnitude faster, more accurate, more memory efficient, easier to train, and improves scaling with system size.
+                            HIP leads to consistently better performance on downstream tasks like transition state search, accelerated geometry optimization, zero-point energy corrections, and vibrational analysis. 
+                        </p>
+                        <!-- Publication Links. -->
+                        <div class="publication-links buttons">
+                            <a class="external-link button is-small is-rounded"
+                                href="https://arxiv.org/abs/2509.21624" target="_blank">
+                                <span class=" icon"><i class="fas fa-file-pdf"></i></span>
+                                <span>Arxiv</span>
+                            </a>
+                            <!-- Link to code -->
+                            <a class="external-link button is-small is-rounded"
+                                href="https://github.com/BurgerAndreas/hip" target="_blank">
+                                <span class="icon"><i class="fas fab fa-github"></i></span>
+                                <span>Code</span>
+                            </a>
+                            <!-- <a class="external-link button is-small is-rounded"
+                                href="https://huggingface.co/datasets/MoSalama98/LoRA-WiSE" target="_blank">
+                                <span class="icon" style="vertical-align: middle; font-size: 20px;">&#129303;</span>
+                                <span style="vertical-align: middle;">Dataset</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End HIP -->
+
             <!-- Start DEQFF -->
             <div class="publication-block columns is-vcentered">
                 <div class="column is-3">
@@ -494,7 +564,7 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <div class="timeline-content">
-                        <h3>Construction Worker</h3>
+                        <h3>Construction</h3>
                         <p>Fruit Security</p>
                         <p class="date">2014/07 - 2014/07</p>
                         <!-- <ul>
